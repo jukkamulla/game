@@ -2,15 +2,26 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-
-    <title></title>
+    <link type="text/css" rel="stylesheet" href="main.css" />
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <title>RoPaSi</title>
 </head>
+
 <body>
-    <input id="userschoice" type="text" placeholder="User's choice" />
-    <input type="submit" onclick="play()"/>
-    <h3>Scoreboard</h3>
+    <div class="header">
+        <h1>Rock, paper, scissors</h1>
+    </div>
+    <div>
+        <input id="userschoice" type="text" placeholder="My choice" />
+        <input type="submit" onclick="play()"/>
+    </div>
+    <div class="scores">
+        <p>My scores</p>
+        <p>Computer's scores</p>
+    </div>
     <div id="messages"></div>
 
 <script src="game.js"></script>
 </body>
+
 </html>
