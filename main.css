@@ -1,25 +1,50 @@
-body {
+html body {
     background-color: #A3A3A3;
     color: #212121;
     font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 
 .header {
+    padding: 10px;
+    vertical-align: middle;
     background-color: #787878;
     text-align: center;
-    height: 100px;
+    height: 200px;
+    color: #ffffff;
+    font-size: 42px;
+}
+
+section {
+    padding: 50px;
 }
 
 .scores p {
     font-size: 36px;
+    display: inline-block;
+    vertical-align: top;
+    color: #ffffff;
+}
+#messages {
+    display: inline-block;
+    width: 200px;
+    padding-top: 50px;
+    font-weight: bold;
 }
 
-.userchoice {
-
-}
 input {
-    height: 30px;
-    border-radius: 50px;
-    color: #1C1C1C;
+    color: #606060;
+    font-weight: 600;
+    padding: 10px;
+    border: 1px solid #f1285f;
+}
 
+#submit {
+    background-color: #f1285f;
+    border: 1px solid #fff;
+    color: #ffffff;
+    font-weight: bold;
+    width: 100px;
 }

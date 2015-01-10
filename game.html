@@ -9,18 +9,19 @@
 
 <body>
     <div class="header">
-        <h1>Rock, paper, scissors</h1>
+        <h1>Rock Paper Scissors</h1>
     </div>
-    <div>
-        <input id="userschoice" type="text" placeholder="My choice" />
-        <input type="submit" onclick="play()"/>
-    </div>
-    <div class="scores">
-        <p>My scores</p>
-        <p>Computer's scores</p>
-    </div>
-    <div id="messages"></div>
-
+    <section>
+        <div>
+            <input id="userschoice" type="text" placeholder="My choice" />
+            <input id="submit" type="submit" value="Play" onclick="play()"/>
+        </div>
+        <div class="scores">
+            <p>My scores</p>
+            <div id="messages"></div>
+            <p>Computer's scores</p>
+        </div>
+    </section>
 <script src="game.js"></script>
 </body>
 
