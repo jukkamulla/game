@@ -21,11 +21,14 @@ section {
     padding: 50px;
 }
 
-.scores p {
+.title {
     font-size: 36px;
+    color: #ffffff;
+}
+
+.scores div {
     display: inline-block;
     vertical-align: top;
-    color: #ffffff;
 }
 #messages {
     display: inline-block;
@@ -47,4 +50,11 @@ input {
     color: #ffffff;
     font-weight: bold;
     width: 100px;
+}
+
+.counter {
+    font-size: 100px;
+    font-weight: bold;
+    color: #f1285f;
+
 }
