@@ -1,4 +1,7 @@
 
+usersCounter = 1;
+computersCounter = 2;
+
 function play() {
 
     function computerChoice() {
@@ -13,6 +16,12 @@ function play() {
         return computerChoice;
     }
 
+
+    /*
+        The return value will be 1 if the user is the winner.
+        The return value will be 2 if the game is draw.
+        The return value will be 3 if the computer is the winner.
+     */
     function compare(choice1, choice2) {
         if (choice1 === choice2) {
             return "The result is a tie!"}
@@ -38,11 +47,15 @@ function play() {
 
     console.log("The game is strated!");
     var usersChoice = document.getElementById("userschoice").value;
+    var usersCounterElement = document.getElementById("usercounter");
+    var computersCounterElement = document.getElementById("computercounter");
     var computersChoice = computerChoice();
     var messages = document.getElementById("messages");
 
     var result = compare(usersChoice, computersChoice);
     messages.innerHTML =  result + "</br>" + messages.innerHTML;
+    usersCounterElement.innerHTML = usersCounter;
+    computersCounterElement.innerHTML = computersCounter;
 }
 
 
