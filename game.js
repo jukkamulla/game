@@ -1,6 +1,6 @@
 
-usersCounter = 1;
-computersCounter = 2;
+usersCounter = 0;
+computersCounter = 0;
 
 function play() {
 
@@ -16,31 +16,32 @@ function play() {
         return computerChoice;
     }
 
-
-    /*
-        The return value will be 1 if the user is the winner.
-        The return value will be 2 if the game is draw.
-        The return value will be 3 if the computer is the winner.
-     */
-    function compare(choice1, choice2) {
-        if (choice1 === choice2) {
+    function compare(userChoice, computerChoice) {
+        if (userChoice === computerChoice) {
             return "The result is a tie!"}
-        else if (choice1 === "rock") {
-            if (choice2 === "scissors") {
+
+        else if (userChoice === "rock") {
+            if (computerChoice === "scissors") {
+                usersCounter += 1;
                 return "Rock wins"}
             else {
+                computersCounter += 1;
                 return "Paper wins"}
         }
-        else if (choice1 === "paper") {
-            if (choice2 === "rock"){
+        else if (userChoice === "paper") {
+            if (computerChoice === "rock"){
+                usersCounter += 1;
                 return "Paper wins"}
             else {
+                computersCounter += 1;
                 return "Scissors wins"}
         }
-        else if (choice1 === "scissors") {
-            if (choice2 === "rock") {
+        else if (userChoice === "scissors") {
+            if (computerChoice === "rock") {
+                computersCounter += 1;
                 return "Rock wins"}
             else {
+                usersCounter += 1;
                 return "Scissors wins"}
         }
     }
