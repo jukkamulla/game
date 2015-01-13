@@ -37,12 +37,6 @@ section {
     font-weight: bold;
 }
 
-input {
-    color: #606060;
-    font-weight: 600;
-    padding: 10px;
-    border: 1px solid #f1285f;
-}
 
 #submit {
     background-color: #f1285f;
@@ -56,5 +50,11 @@ input {
     font-size: 100px;
     font-weight: bold;
     color: #f1285f;
+}
 
+.cube, .paper, .scissors {
+    color: #ffffff;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-right: 50px;
 }

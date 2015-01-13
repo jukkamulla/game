@@ -2,7 +2,8 @@
 usersCounter = 0;
 computersCounter = 0;
 
-function play() {
+function play(usersChoice) {
+    console.log(this);
 
     function computerChoice() {
         var computerChoice = Math.random();
@@ -47,7 +48,6 @@ function play() {
     }
 
     console.log("The game is strated!");
-    var usersChoice = document.getElementById("userschoice").value;
     var usersCounterElement = document.getElementById("usercounter");
     var computersCounterElement = document.getElementById("computercounter");
     var computersChoice = computerChoice();

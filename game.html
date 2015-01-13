@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link type="text/css" rel="stylesheet" href="main.css" />
     <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <title>RoPaSi</title>
 </head>
 
@@ -13,8 +14,9 @@
     </div>
     <section>
         <div>
-            <input id="userschoice" type="text" placeholder="My choice" />
-            <input id="submit" type="submit" value="Play" onclick="play()"/>
+            <i class="fa fa-5x fa-cube cube"  onclick="play('rock')"></i>
+            <i class="fa fa-5x fa-newspaper-o paper" onclick="play('paper')"></i>
+            <i class="fa fa-5x fa-scissors scissors" onclick="play('scissors')"></i>
         </div>
         <div class="scores">
             <div>
