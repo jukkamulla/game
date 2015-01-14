@@ -54,7 +54,7 @@ function play(usersChoice) {
     var messages = document.getElementById("messages");
 
     var result = compare(usersChoice, computersChoice);
-    messages.innerHTML =  result + "</br>" + messages.innerHTML;
+    messages.innerHTML =  result + "</br>";
     usersCounterElement.innerHTML = usersCounter;
     computersCounterElement.innerHTML = computersCounter;
 }

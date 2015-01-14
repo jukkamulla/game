@@ -50,6 +50,8 @@ section {
     font-size: 100px;
     font-weight: bold;
     color: #f1285f;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .cube, .paper, .scissors {
